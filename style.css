@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/*font-family: 'Pacifico', cursive;*/
+
+
+
+body{
+    background: linear-gradient(to right , rgb(153, 21, 17) , rgb(181, 20, 87))
+    
+
+}
+header{
+    text-align: center;
+}
+header h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    border: 9px solid black;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    box-shadow: 3px 5px 100px rgba(162, 106, 162, 0.6);
+}
+.contact{
+    font-size: 20px;
+   
+}
+
+.connect{
+    background-color: black;
+}
+.contact i{
+    margin-right: 2rem;
+    text-align: center;
+    transform: translateX(
+        1rem
+    );
+
+}
+
+.clock{
+    height: 20rem;
+    width: 20rem;
+    background: linear-gradient(to leftt,rgb(80, 9, 92),rgb(105, 21, 12));
+    border: 3px solid black;
+    border-radius: 50%;
+    margin: 50%  auto;
+    box-shadow: 3px 3px 93px black;
+}
+
+.clock-face{
+    
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transform: translateY(-3px);
+}
+
+.hand{
+    width: 43%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;  /* the origin is the point,where the line starts to rotate:::the transform origin rotates the clock hands to the right side, of the pivot.
+                               Initially it is 50% which rotates the hands on the middle of the axis. */
+
+    transform: rotate(90deg);
+    transition: all 0.05;
+    transition-timing-function: cubic-bezier(0, 2.94, 0.22, 0.05);
+    margin-left: 1.3rem;
+}
