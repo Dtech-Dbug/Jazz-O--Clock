@@ -30,6 +30,8 @@
         <span> <i class="fab fa-github"></i></span>
         <span> <i class="fab fa-twitter"></i></span>
     </div>  -->
+
+  
     
 
     <div class="clock">
@@ -47,12 +49,17 @@
         const secondHand = document.querySelector(".second-hand")
         const minuteHand = document.querySelector(".min-hand")
         const hourHand = document.querySelector(".hour-hand")
+        const digiClock = document.querySelector('.digital')
 
         function setDate(){
             const now = new Date();  // note of the date
             const seconds = now.getSeconds();  // note of the seconds of the current minute
             const minutes = now.getMinutes()
             const hours = now.getHours()
+
+            
+           
+            
 
              // to convert the seconds to degree for rotation of the clock arms
              // initially, we offset rotate rotate was set to 90deg, so we add 90 deg to the secondDegrees to counter the offset, else rhe clock would start ticking from a 90deg left to right.
